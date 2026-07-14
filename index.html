@@ -1,16 +1,21 @@
-<!DOCTYPE html>
+
 <html lang="bn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>জাহাঙ্গীর প্রেস</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<meta charset="UTF-8"></meta>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"></meta>
+
+<title>জাহাঙ্গীর প্রেস | মহেশপুর, ঝিনাইদহ</title>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"></link>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"></link>
+
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&amp;display=swap" rel="stylesheet"></link>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"></link>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -19,116 +24,321 @@ font-family:'Hind Siliguri',sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#0f172a,#1d4ed8);
+
+background:
+linear-gradient(-45deg,#0f172a,#2563eb,#0ea5e9,#1e40af);
+
+background-size:400% 400%;
+
+animation:bg 10s ease infinite;
+
 display:flex;
 justify-content:center;
 align-items:center;
 min-height:100vh;
 padding:20px;
+
+}
+
+@keyframes bg{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
 }
 
 .card{
+
+position:relative;
+
 width:100%;
-max-width:420px;
-background:#fff;
-padding:30px;
-border-radius:20px;
-box-shadow:0 20px 50px rgba(0,0,0,.3);
+max-width:460px;
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.2);
+
+border-radius:30px;
+
+padding:35px 25px;
+
 text-align:center;
+
+box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+animation:fade .8s;
+
 }
 
-.logo{
-width:90px;
-height:90px;
-background:#2563eb;
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.location{
+
+position:absolute;
+
+top:18px;
+
+right:18px;
+
+width:50px;
+
+height:50px;
+
+background:#ef4444;
+
 border-radius:50%;
+
 display:flex;
-align-items:center;
+
 justify-content:center;
-margin:auto;
-font-size:40px;
+
+align-items:center;
+
+text-decoration:none;
+
+color:white;
+
+font-size:22px;
+
+transition:.3s;
+
+}
+
+.location:hover{
+
+transform:scale(1.1);
+
+}
+
+.welcome{
+
+font-size:20px;
+
+font-weight:700;
+
 color:#fff;
+
+margin-bottom:18px;
+
+}
+
+.profile{
+
+width:130px;
+
+height:130px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:5px solid white;
+
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+transition:.4s;
+
+}
+
+.profile:hover{
+
+transform:scale(1.05);
+
 }
 
 h1{
-margin-top:20px;
+
+margin-top:18px;
+
 font-size:30px;
-color:#111827;
+
+color:white;
+
 }
 
-h3{
-margin-top:5px;
-font-size:18px;
-color:#6b7280;
+p{
+
+color:#f3f4f6;
+
+margin-top:8px;
+
 }
 
 .social{
-display:flex;
-justify-content:center;
-gap:18px;
+
 margin:25px 0;
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
 }
 
 .social a{
-width:50px;
-height:50px;
+
+width:52px;
+
+height:52px;
+
 border-radius:50%;
+
 display:flex;
-justify-content:center;
+
 align-items:center;
-color:#fff;
+
+justify-content:center;
+
 font-size:22px;
+
+color:white;
+
 text-decoration:none;
+
 transition:.3s;
+
 }
 
-.fb{background:#1877F2;}
-.tt{background:#000;}
-.yt{background:#ff0000;}
+.fb{
+
+background:#1877F2;
+
+}
+
+.yt{
+
+background:#ff0000;
+
+}
+
+.tt{
+
+background:black;
+
+}
 
 .social a:hover{
-transform:scale(1.15);
+
+transform:translateY(-5px);
+
 }
 
-.big{
-display:block;
-background:#1877F2;
-color:#fff;
-padding:18px;
-font-size:22px;
-font-weight:bold;
-text-decoration:none;
+.btn{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:10px;
+
+width:100%;
+
+padding:16px;
+
 border-radius:14px;
-margin-bottom:15px;
-}
 
-.small{
-display:block;
-padding:15px;
 font-size:18px;
+
+font-weight:700;
+
 text-decoration:none;
-font-weight:600;
-border-radius:14px;
-margin-top:12px;
+
+margin-top:14px;
+
+color:white;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+.facebook{
+
+background:#1877F2;
+
 }
 
 .youtube{
-background:#fff0f0;
-color:#ff0000;
-border:2px solid #ffb6b6;
+
+background:#ff0000;
+
 }
 
 .tiktok{
-background:#f3f4f6;
-color:#111;
-border:2px solid #ddd;
+
+background:#111;
+
+}
+
+.whatsapp{
+
+background:#25D366;
+
+}
+
+.gmail{
+
+margin-top:18px;
+
+padding:15px;
+
+background:white;
+
+border-radius:14px;
+
+font-weight:700;
+
+color:#333;
+
 }
 
 .footer{
-margin-top:25px;
-color:#888;
+
+margin-top:22px;
+
+color:white;
+
 font-size:14px;
+
 }
+
 </style>
 
 </head>
@@ -137,46 +347,142 @@ font-size:14px;
 
 <div class="card">
 
-<div class="logo">
-<i class="fas fa-print"></i>
+<a class="location" href="https://maps.app.goo.gl/zhuzM7Z3aDqs7fQ68?g_st=aw" target="_blank">
+
+<i class="fas fa-location-dot"></i>
+
+</a>
+
+<div class="welcome">
+
+🌸 জাহাঙ্গীর প্রেসে আপনাকে স্বাগতম 🌸
+
 </div>
 
+<img class="profile" src="profile.png" />
+
 <h1>জাহাঙ্গীর প্রেস</h1>
-<h3>মহেশপুর, ঝিনাইদহ</h3>
+
+<p>মহেশপুর, ঝিনাইদহ</p>
 
 <div class="social">
 
 <a class="fb" href="https://www.facebook.com/share/1BPMLtUG9f/" target="_blank">
+
 <i class="fab fa-facebook-f"></i>
+
 </a>
 
-<a class="tt" href="https://www.tiktok.com/@zahangirpress15?is_from_webapp=1&sender_device=pc" target="_blank">
+<a class="tt" href="https://www.tiktok.com/@zahangirpress15?is_from_webapp=1&amp;sender_device=pc" target="_blank">
+
 <i class="fab fa-tiktok"></i>
+
 </a>
 
 <a class="yt" href="https://youtube.com/@zahangirpress15?si=d_zF97iLlPwk8uoE" target="_blank">
+
 <i class="fab fa-youtube"></i>
+
+</a>
+
+</div>
+  
+<a class="btn facebook" href="https://www.facebook.com/share/1BPMLtUG9f/" target="_blank">
+
+<i class="fab fa-facebook-f"></i>
+
+Facebook Page
+
+</a>
+
+
+<a class="btn youtube" href="https://youtube.com/@zahangirpress15?si=d_zF97iLlPwk8uoE" target="_blank">
+
+<i class="fab fa-youtube"></i>
+
+YouTube Channel
+
+</a>
+
+
+<a class="btn tiktok" href="https://www.tiktok.com/@zahangirpress15?is_from_webapp=1&amp;sender_device=pc" target="_blank">
+
+<i class="fab fa-tiktok"></i>
+
+TikTok Profile
+
+</a>
+
+
+<a class="btn whatsapp" href="https://wa.me/8801973836468" target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+WhatsApp (01973836468)
+
+</a>
+
+
+<div class="gmail">
+
+<i class="fas fa-envelope"></i>
+
+&nbsp;
+
+<a href="mailto:zahangirart2015@gmail.com" style="color: #333333; text-decoration: none;">
+
+zahangirart2015@gmail.com
+
 </a>
 
 </div>
 
-<a class="big" href="https://www.facebook.com/share/1BPMLtUG9f/" target="_blank">
-📘 Facebook Page
-</a>
 
-<a class="small youtube" href="https://youtube.com/@zahangirpress15?si=d_zF97iLlPwk8uoE" target="_blank">
-▶️ YouTube Channel
-</a>
+<div style="color: white; line-height: 30px; margin-top: 20px;">
 
-<a class="small tiktok" href="https://www.tiktok.com/@zahangirpress15?is_from_webapp=1&sender_device=pc" target="_blank">
-🎵 TikTok Profile
-</a>
+<i class="fas fa-print"></i>
+
+<b> আমাদের সেবাসমূহ</b>
+
+<br />
+
+🖨️ ফটোকপি
+
+<br />
+
+📄 কম্পিউটার কম্পোজ
+
+<br />
+
+🎨 গ্রাফিক্স ডিজাইন
+
+<br />
+
+📚 লেমিনেশন
+
+<br />
+
+📇 ভিজিটিং কার্ড
+
+<br />
+
+📢 ব্যানার ও পোস্টার প্রিন্ট
+
+</div>
+
 
 <div class="footer">
+
 © 2026 | Jahangir Press
+
+<br /><br />
+
+Made with ❤️ in Bangladesh
+
 </div>
 
 </div>
 
 </body>
+
 </html>
